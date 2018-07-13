@@ -5,10 +5,10 @@ let app = express();
 
 app.get('/test', (req, res) => {
 	let json = {
-		"session_id": -1,
-		"context": 'json test'
+		session_id: -1,
+		context: 'json test'
 	};
-	res.send(200, JSON.stringify(json));
+	res.status(200).json(json);
 });
 /* ------------------------------------------------------------------------------------------------- */
 
