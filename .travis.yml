@@ -1,4 +1,4 @@
-os: "linux",
+os: "linux"
 sudo: enabled
 language: node_js
 node_js:
