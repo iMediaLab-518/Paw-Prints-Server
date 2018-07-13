@@ -1,5 +1,5 @@
 # Paw-Prints-Server
-[![Build Status](https://travis-ci.org/iMediaLab-518/Paw-Prints-Server.svg?branch=develop)](https://travis-ci.org/iMediaLab-518/Paw-Prints-Server)
+[![Build Status](https://travis-ci.org/iMediaLab-518/Paw-Prints-Server.svg?branch=master)](https://travis-ci.org/iMediaLab-518/Paw-Prints-Server)
 
 - “爪印”项目后台服务器
 
