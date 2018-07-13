@@ -22,7 +22,6 @@ describe('GET /test', () => {
 			.then(res => {
 				assert(res.body.session_id, -1)
 				assert(res.body.context, 'json test')
-				done();
 			})
 	});
 });
