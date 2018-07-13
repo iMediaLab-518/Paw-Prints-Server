@@ -3,7 +3,7 @@ let request = require("supertest");
 
 describe('GET 127.0.0.1:8888/', () => {
 	it('respond with text', (done) => {
-		request(app)
+		request('127.0.0.1:8888')
 			.get('/')
 			.set('Accept', 'application/text')
 			.expect('Content-Type', 'text/plain')
@@ -20,7 +20,7 @@ describe('GET 127.0.0.1:8888/', () => {
 
 describe('GET 127.0.0.1:8888/test', () => {
 	it('respond with json', (done) => {
-		request(app)
+		request('127.0.0.1:8888')
 			.get('/test')
 			.set('Accept', 'application/json')
 			.expect('Content-Type', /json/)
