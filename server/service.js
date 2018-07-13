@@ -14,7 +14,7 @@ let querystring = require('querystring');
 
 let session_id = 0;
 
-http.createServer((request, response) => {
+let app = http.createServer((request, response) => {
 	let method = request.method;
 	let params = url.parse(request.url, true);
 	//let uri = "html/";
@@ -41,6 +41,9 @@ http.createServer((request, response) => {
 				});
 				// 发送响应数据
 				response.end(JSON.stringify(json));
+				setTimeout(() => {
+					app.close();
+				}, 3000)
 				break;
 			case "/robots.txt":
 				break;

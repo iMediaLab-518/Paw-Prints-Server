@@ -12,5 +12,4 @@ install:
   - npm install mocha -g
   - npm install supertest --save-dev
 script:
-  - node server/service.js
   - node test/test.js
