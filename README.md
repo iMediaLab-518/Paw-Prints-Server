@@ -1,6 +1,7 @@
 # Paw-Prints-Server
 [![Build Status](https://travis-ci.org/iMediaLab-518/Paw-Prints-Server.svg?branch=develop)](https://travis-ci.org/iMediaLab-518/Paw-Prints-Server)
-“爪印”项目后台服务器
+
+- “爪印”项目后台服务器
 
 ### 目录结构
 ```
@@ -23,5 +24,7 @@
 ├── util                                存放工具文件
 │   ├── net.js                          封装网络请求
 │   ├── ...
+├── test                                测试相关
+│   ├── test.js                         自动化测试
 ├── README.md                           README
 ```
