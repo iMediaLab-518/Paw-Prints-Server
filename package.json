@@ -13,7 +13,9 @@
     "type": "0.0.3",
     "url": "^0.11.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "supertest": "^3.1.0"
+  },
   "scripts": {
     "test": "node src/service.js"
   },

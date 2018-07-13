@@ -14,7 +14,7 @@ app.get('/test', (req, res) => {
 
 describe('GET /test', () => {
 	it('respond with json', () => {
-		return request(app)
+		request(app)
 			.get('/test')
 			.set('Accept', 'application/json')
 			.expect('Content-Type', /json/)
