@@ -8,7 +8,7 @@ app.get('/test', (req, res) => {
 		session_id: -1,
 		context: 'json test'
 	};
-	res.send(200, json);
+	res.status(200).json(json);
 });
 /* ------------------------------------------------------------------------------------------------- */
 
@@ -19,11 +19,9 @@ describe('GET /test', () => {
 			.set('Accept', 'application/json')
 			.expect('Content-Type', /json/)
 			.expect(200)
-			.end((err, res) => {
-				if (err) {
-					done(err);
-				}
-				res.body.context.should.be.eql('json test');
+			.then(res => {
+				assert(res.body.session_id, -1)
+				assert(res.body.context, 'json test')
 				done();
 			})
 	});
