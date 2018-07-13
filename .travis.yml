@@ -1,0 +1,15 @@
+os: "linux"
+sudo: enabled
+language: node_js
+node_js:
+  - "node"
+  - "8"
+branchs:
+  only:
+  - develop
+install:
+  - npm install
+  - npm install mocha -g
+  - npm install supertest --save-dev
+script:
+  - mocha test/test.js
