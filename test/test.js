@@ -13,8 +13,8 @@ app.get('/test', (req, res) => {
 /* ------------------------------------------------------------------------------------------------- */
 
 describe('GET /test', () => {
-	it('respond with json', (done) => {
-		request(app)
+	it('respond with json', () => {
+		return request(app)
 			.get('/test')
 			.set('Accept', 'application/json')
 			.expect('Content-Type', /json/)
