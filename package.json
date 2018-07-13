@@ -1,0 +1,27 @@
+{
+  "name": "paw-prints-server",
+  "version": "1.0.0",
+  "description": "“爪印”项目后台服务器",
+  "main": "scr/service.js",
+  "dependencies": {
+    "express": "^4.16.3",
+    "fs": "^0.0.1-security",
+    "http": "^0.0.0",
+    "querystring": "^0.2.0",
+    "url": "^0.11.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iMediaLab-518/Paw-Prints-Server.git"
+  },
+  "author": "whz",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/iMediaLab-518/Paw-Prints-Server/issues"
+  },
+  "homepage": "https://github.com/iMediaLab-518/Paw-Prints-Server#readme"
+}
